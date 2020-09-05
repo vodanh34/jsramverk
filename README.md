@@ -1,10 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-##Installation
+## Installation
 
-To install the app simply download the app then simply type the command:
-`npm i`
-in the shell. The command stands for `npm install` and by default it will install all necessary components that's listed in the package.json
+To install the app simply download the app then simply type the command: `npm i`in the shell. 
+The command stands for `npm install` and by default it will install all necessary components that's listed in the package.json
 
 ## Available Scripts
 
