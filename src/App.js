@@ -4,6 +4,7 @@ import {
     Route,
     Switch
 } from 'react-router-dom';
+import "./style/style.scss"
 
 import Nav from "./view/nav.js";
 import Home from "./view/home.js";

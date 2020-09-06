@@ -1,13 +1,32 @@
-import React from 'react';
+import React, { Component } from 'react';
+import ReactMarkdown from 'react-markdown';
+import Readme from "../../README.md";
 
-function Week1() {
-  return (
-      <div className="contents">
-          <h1>Report of Week 1</h1>
+class Week1 extends Component {
+    constructor() {
+        super();
+        this.state = { markdown: '' };
+    }
 
-          <p>Testing</p>
-      </div>
-  );
+    componentWillMount() {
+      fetch(Readme)
+          .then(res => res.text())
+              .then(text => this.setState({ markdown: text }));
+    }
+
+    render() {
+      const { markdown } = this.state;
+      return (
+          <div className="contents">
+              <h1>Report of Week 1</h1>
+
+              <p>Link to <a href="https://github.com/vodanh34/jsramverk">Github</a></p>
+
+              <ReactMarkdown source={markdown} />
+
+          </div>
+      );
+    }
 }
 
 export default Week1;

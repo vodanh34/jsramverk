@@ -1,0 +1,20 @@
+$darkgray: #4d4d4d;
+$lightgray: #e6e6e6;
+$white: #ffffff;
+$red: #ff1755;
+
+body {
+      background-color: $lightgray;
+}
+
+@mixin translateY($e) {
+    -webkit-transform: translateY($e);
+    -moz-transform: translateY($e);
+    transform: translateY($e);
+}
+
+@mixin transition($e) {
+    -webkit-transition: $e;
+    -moz-transition: $e;
+    transition: $e;
+}
